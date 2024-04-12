@@ -1,0 +1,76 @@
+@use 'reset' as *;
+@use 'variables' as *;
+@use 'base' as *;
+@use 'media-queries' as *;
+
+header {
+    color: white;
+    background-color: var(--blue-header);
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    h1 {
+        margin: auto 2rem;
+    }
+    ul {
+        display: flex;
+        margin: auto 2rem;
+        li {
+            margin: 0 2rem;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            .contact {
+                color: black;
+                background-color: white;
+                padding: 1rem 2rem;
+                border-radius: 30px;
+                font-weight: bold;
+            }
+        }
+        @include s {
+            display: none;
+        }
+    }
+    .fa-solid.fa-bars {
+        display: none;
+        @include s {
+            display: block;
+            font-size: 2rem;
+            margin: auto 2rem auto 0;
+        }
+    }
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--green-footer);
+    h3 {
+        font-size: 3rem;
+        margin: 3rem;
+        color: var(--dark-green-title);
+    }
+    ul {
+        display: flex;
+    }
+    .navigation-footer {
+        margin-bottom: 5rem;
+        li {
+            margin: 0 3rem;
+            a {
+                text-decoration: none;
+                color: var(--green-text);
+            }
+        }
+    }
+    .social-media-list {
+        margin-bottom: 3rem;
+        li {
+            margin: 0 1rem;
+        }
+    }
+}
