@@ -12,14 +12,20 @@
         font-size: 7rem;
         margin: 5rem 0 7rem 0;
         letter-spacing: 5px;
-        @include s {
-            text-align: center;
-        }
+        
+        
+        
     }
     .arrow-down {
         background: url(./assets/images/icon-arrow-down.svg) center center/cover;
         height: 130px;
         width: 40px;
+    }
+    @include s {
+        h2 {
+            text-align: center;
+            font-size: 5rem;
+        }
     }
 }
 
@@ -35,47 +41,69 @@
             max-height: 50%;
             h3 {
                 font-size: 3rem;
-                @include s {
-                    text-align: center;
-                    margin-top: 4rem;
-                }
+                
+                
+                
+                
             }
             p {
                 line-height: 2rem;
                 margin: 2rem 0;
                 color: var(--light-purple-text);
-                @include s {
-                    text-align: center;
-                }
+                
+                
+                
             }
             a {
                 font-weight: bold;
                 color: black;
-                @include s {
-                    margin-bottom: 2rem;
-                }
+                
+                
+                
             }
-            @include s {
-                max-width: 90%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+            
+            
+            
+            
+            
+            
         }
-        @include s {
-            width: 100%;
-        }
+        
+        
+        
     }
     .egg {
         width: 50%;
         height: 700px;
         background: url(./assets/images/sunnyside-egg.jpeg) center center/cover;
-        @include s {
-            width: 100%;
-        }
+        
+        
+        
     }
     @include s {
         flex-direction: column-reverse;
+        article {
+            width: 100%;
+            .content-of-transform-your-brand {
+                max-width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    text-align: center;
+                    margin-top: 4rem;
+                }
+                p {
+                    text-align: center;
+                }
+                a {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        .egg {
+            width: 100%;
+        }
     }
 }
 
@@ -91,47 +119,69 @@
             max-height: 50%;
             h3 {
                 font-size: 3rem;
-                @include s {
-                    text-align: center;
-                    margin-top: 4rem;
-                }
+                
+                
+                
+                
             }
             p {
                 line-height: 2rem;
                 margin: 2rem 0;
                 color: var(--light-purple-text);
-                @include s {
-                    text-align: center;
-                }
+                
+                
+                
             }
             a {
                 font-weight: bold;
                 color: black;
-                @include s {
-                    margin-bottom: 2rem;
-                }
+                
+                
+                
             }
-            @include s {
-                max-width: 90%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+            
+            
+            
+            
+            
+            
         }
-        @include s {
-            width: 100%;
-        }
+        
+        
+        
     }
     .glas {
         width: 50%;
         height: 700px;
         background: url(./assets/images/sunnyside-glas.jpeg) center center/cover;
-        @include s {
-            width: 100%;
-        }
+        
+        
+        
     }
     @include s {
         flex-direction: column;
+        article {
+            width: 100%;
+            .content-of-stand-out-to-the-right-audience {
+                max-width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    text-align: center;
+                    margin-top: 4rem;
+                }
+                p {
+                    text-align: center;
+                }
+                a {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        .glas {
+            width: 100%;
+        }
     }
 }
 
@@ -145,9 +195,9 @@
         .content-of-articles-of-graphic-design-and-photography {
             max-width: 50%;
             margin: 0 auto;
-            @include s {
-                max-width: 90%;
-            }
+            
+            
+            
         }
         h4 {
             font-size: 2rem;
@@ -158,9 +208,9 @@
             margin: 2rem 0;
             line-height: 1.5rem;
         }
-        @include s {
-            width: 100%;
-        }
+        
+        
+        
     }
     .graphic-design {
         background: url(./assets/images/sunnyside-cherry.jpeg) center center/cover;
@@ -170,9 +220,9 @@
         p {
             color: var(--green-text);
         }
-        @include s {
-            height: 700px;
-        }
+        
+        
+        
     }
     .photography {
         background: url(./assets/images/sunnyside-orange.jpeg) center center/cover;
@@ -182,12 +232,22 @@
         p {
             color: var( --blue-text);
         }
-        @include s {
-            height: 700px;
-        }
+        
+        
+        
     }
     @include s {
         flex-direction: column;
+        article {
+
+            .content-of-articles-of-graphic-design-and-photography {
+                max-width: 90%;
+            }
+            width: 100%;
+        }
+        .graphic-design, .photography {
+            height: 700px;
+        }
     }
 }
 
@@ -229,17 +289,22 @@
                 color: var(--testimony);
             }
         }
-        @include s {
-            flex-direction: column;
-        }
     }
     @include s {
         height: auto;
+        h4 {
+            margin-top: 3rem;
+        }
+        ul {
+            flex-direction: column;
+            margin-bottom: 3rem;
+        }
     }
 }
 
 .decoration {
     display: flex;
+    flex-flow: row wrap;
     height: 500px;
     .bottles {
         background: url(./assets/images/sunnyside-bottles.jpeg) center center/cover;
@@ -256,5 +321,20 @@
     .sugar {
         background: url(./assets/images/sunnyside-sugar.jpeg) center center/cover;
         width: 25%;
+    }
+
+    @include s {
+        .bottles {
+            width: 50%;
+        }
+        .plate {
+            width: 50%;
+        }
+        .cone {
+            width: 50%;
+        }
+        .sugar {
+            width: 50%;
+        }
     }
 }
